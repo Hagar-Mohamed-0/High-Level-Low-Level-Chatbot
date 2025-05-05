@@ -1,5 +1,4 @@
 import java.util.*;
-////////////////////////////part1 malak and hagar//////////////////////
 public class Chatbot {
 
     static ArrayList<String> userIDs = new ArrayList<>();
@@ -168,7 +167,7 @@ public class Chatbot {
 
 
     static List<String> verbToBeList = Arrays.asList("is", "are", "am", "was", "were", "has", "have");
-////////////////////////////////////////////////////////////////////////part2 mahmoud//////////////
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -220,7 +219,7 @@ public class Chatbot {
         scanner.close();
         System.out.println("Chatbot session ended.");
     }
-///////////////////////////////////////////////part3 sandy///////////
+
 
     static int getOrCreateUser(String id) {
         for (int i = 0; i < userIDs.size(); i++) {
@@ -240,7 +239,6 @@ public class Chatbot {
 
 
 
-///////////////part4 zeinab zahraa//////////////////
     static String generateResponse(String input, int index) {
         if (input.startsWith("i love ")) {
             String interest = input.replace("i love", "").trim();
@@ -349,8 +347,7 @@ public class Chatbot {
     
         return "Sorry, I didn't understand that.";
     }
-    
- ///////////////////////////////////////////////part3 sandy///////////   
+  
     static boolean startsWithVerbToBe(String input) {
         return verbToBeList.stream().anyMatch(verb -> input.startsWith(verb + " "));
     }
