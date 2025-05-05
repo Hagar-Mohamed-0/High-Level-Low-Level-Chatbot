@@ -1,0 +1,43 @@
+# === Java Build Files ===
+*.class
+*.jar
+*.war
+*.ear
+
+# === Java IDE Files ===
+*.iml
+.idea/
+*.log
+*.swp
+out/
+target/
+build/
+
+# === Logisim Files ===
+*.bak
+*.tmp
+
+# === OS-Specific Files ===
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# === Environment & Secrets ===
+.env
+*.key
+*.pem
+
+# === Compiled Assembly or Binary Files ===
+*.o
+*.out
+*.bin
+*.exe
+
+# === Test Reports ===
+test-output/
+coverage/
+
+# === Misc ===
+*.~*
+*~
